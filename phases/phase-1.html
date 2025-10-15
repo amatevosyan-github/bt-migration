@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.20" />
+    <style>
+      :root {
+        --vp-c-bg: #fff;
+      }
+
+      [data-theme='dark'] {
+        --vp-c-bg: #1b1b1f;
+      }
+
+      html,
+      body {
+        background-color: var(--vp-c-bg);
+      }
+    </style>
+    <script>
+      const useChoice = localStorage.getItem('vuepress-color-scheme')
+      const systemStatus =
+        'matchMedia' in window
+          ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          : false
+
+      if (useChoice === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (useChoice === 'dark' || systemStatus) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" href="/images/favicon.ico"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><meta name="keywords" content="Vue 3, Vite, Vuetify, SPA, Exchange, bit.team, миграция"><meta property="og:title" content="bit.team Exchange Migration Docs"><meta property="og:description" content="Техническая документация проекта миграции"><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image"><title>Фаза 1 - Инициализация проекта | Exchange Migration</title><meta name="description" content="Техническая документация проекта миграции bit.team на единое SPA приложение">
+    <link rel="preload" href="/bt-migration/assets/style-VHyh3l9n.css" as="style"><link rel="stylesheet" href="/bt-migration/assets/style-VHyh3l9n.css">
+    <link rel="modulepreload" href="/bt-migration/assets/app-p3I3XXQx.js"><link rel="modulepreload" href="/bt-migration/assets/phase-1.html-CcbV05ls.js">
+    <link rel="prefetch" href="/bt-migration/assets/next-steps.html-jZzL8o8k.js" as="script"><link rel="prefetch" href="/bt-migration/assets/overview.html-Du2w89Rz.js" as="script"><link rel="prefetch" href="/bt-migration/assets/index.html-D-0RXjSw.js" as="script"><link rel="prefetch" href="/bt-migration/assets/roadmap.html-DihsoCNB.js" as="script"><link rel="prefetch" href="/bt-migration/assets/tech-stack.html-DPGRy6Je.js" as="script"><link rel="prefetch" href="/bt-migration/assets/phase-0.html-B08vXmjQ.js" as="script"><link rel="prefetch" href="/bt-migration/assets/phase-10.html-B5h-Qb1a.js" as="script"><link rel="prefetch" href="/bt-migration/assets/phase-11.html-k3zJj5VB.js" as="script"><link rel="prefetch" href="/bt-migration/assets/phase-12.html-CkddJ9j-.js" as="script"><link rel="prefetch" href="/bt-migration/assets/phase-2.html-CiVKi_rl.js" as="script"><link rel="prefetch" href="/bt-migration/assets/phase-3.html-Pk3OwFDF.js" as="script"><link rel="prefetch" href="/bt-migration/assets/phase-4.html-BDT0g21X.js" as="script"><link rel="prefetch" href="/bt-migration/assets/phase-5.html-B2Q42zX8.js" as="script"><link rel="prefetch" href="/bt-migration/assets/phase-6.html-6uuVnoV0.js" as="script"><link rel="prefetch" href="/bt-migration/assets/phase-7.html-DUdVpbas.js" as="script"><link rel="prefetch" href="/bt-migration/assets/phase-8.html-B-oVAlKT.js" as="script"><link rel="prefetch" href="/bt-migration/assets/phase-9.html-BiINjgqc.js" as="script"><link rel="prefetch" href="/bt-migration/assets/404.html-BDj3Mz-k.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="vp-theme-container external-link-icon" vp-container><!--[--><header class="vp-navbar" vp-navbar><div class="vp-toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a class="route-link" href="/bt-migration/"><img class="vp-site-logo" src="/bt-migration/images/Logo.gif" alt="Exchange Migration"><span class="vp-site-name vp-hide-mobile" aria-hidden="true">Exchange Migration</span></a></span><div class="vp-navbar-items-wrapper" style=""><!--[--><!--]--><nav class="vp-navbar-items vp-hide-mobile" aria-label="site navigation"><!--[--><div class="vp-navbar-item"><a class="route-link auto-link" href="/bt-migration/" aria-label="🏠 Главная"><!--[--><!--[--><!--]--><!--]-->🏠 Главная<!--[--><!--[--><!--]--><!--]--></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/bt-migration/overview.html" aria-label="📋 Обзор"><!--[--><!--[--><!--]--><!--]-->📋 Обзор<!--[--><!--[--><!--]--><!--]--></a></div><div class="vp-navbar-item"><div class="vp-navbar-dropdown-wrapper"><button class="vp-navbar-dropdown-title" type="button" aria-label="📚 Фазы"><span class="title">📚 Фазы</span><span class="arrow down"></span></button><button class="vp-navbar-dropdown-title-mobile" type="button" aria-label="📚 Фазы"><span class="title">📚 Фазы</span><span class="right arrow"></span></button><ul class="vp-navbar-dropdown" style="display:none;"><!--[--><li class="vp-navbar-dropdown-item"><a class="route-link auto-link" href="/bt-migration/phases/phase-0.html" aria-label="Фаза 0: Подготовка"><!--[--><!--[--><!--]--><!--]-->Фаза 0: Подготовка<!--[--><!--[--><!--]--><!--]--></a></li><li class="vp-navbar-dropdown-item"><a class="route-link route-link-active auto-link" href="/bt-migration/phases/phase-1.html" aria-label="Фаза 1: Настройка"><!--[--><!--[--><!--]--><!--]-->Фаза 1: Настройка<!--[--><!--[--><!--]--><!--]--></a></li><li class="vp-navbar-dropdown-item"><a class="route-link auto-link" href="/bt-migration/phases/phase-2.html" aria-label="Фаза 2: UI Kit"><!--[--><!--[--><!--]--><!--]-->Фаза 2: UI Kit<!--[--><!--[--><!--]--><!--]--></a></li><li class="vp-navbar-dropdown-item"><a class="route-link auto-link" href="/bt-migration/phases/phase-0.html" aria-label="Все фазы..."><!--[--><!--[--><!--]--><!--]-->Все фазы...<!--[--><!--[--><!--]--><!--]--></a></li><!--]--></ul></div></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/bt-migration/tech-stack.html" aria-label="⚙️ Технический стек"><!--[--><!--[--><!--]--><!--]-->⚙️ Технический стек<!--[--><!--[--><!--]--><!--]--></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/bt-migration/roadmap.html" aria-label="🗺️ Roadmap"><!--[--><!--[--><!--]--><!--]-->🗺️ Roadmap<!--[--><!--[--><!--]--><!--]--></a></div><div class="vp-navbar-item"><div class="vp-navbar-dropdown-wrapper"><button class="vp-navbar-dropdown-title" type="button" aria-label="🔗 Ссылки"><span class="title">🔗 Ссылки</span><span class="arrow down"></span></button><button class="vp-navbar-dropdown-title-mobile" type="button" aria-label="🔗 Ссылки"><span class="title">🔗 Ссылки</span><span class="right arrow"></span></button><ul class="vp-navbar-dropdown" style="display:none;"><!--[--><li class="vp-navbar-dropdown-item"><a class="auto-link external-link" href="https://github.com/bit-team/exchange-unified" aria-label="GitHub" rel="noopener noreferrer" target="_blank"><!--[--><!--[--><!--]--><!--]-->GitHub<!--[--><!--[--><!--]--><!--]--></a></li><li class="vp-navbar-dropdown-item"><a class="route-link auto-link" href="/bt-migration/#" aria-label="Figma"><!--[--><!--[--><!--]--><!--]-->Figma<!--[--><!--[--><!--]--><!--]--></a></li><!--]--></ul></div></div><!--]--></nav><!--[--><!--]--><button type="button" class="vp-toggle-color-mode-button" title="toggle color mode"><svg class="light-icon" viewbox="0 0 32 32" style=""><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg class="dark-icon" viewbox="0 0 32 32" style="display:none;"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!----></div></header><!--]--><div class="vp-sidebar-mask"></div><!--[--><aside class="vp-sidebar" vp-sidebar><nav class="vp-navbar-items" aria-label="site navigation"><!--[--><div class="vp-navbar-item"><a class="route-link auto-link" href="/bt-migration/" aria-label="🏠 Главная"><!--[--><!--[--><!--]--><!--]-->🏠 Главная<!--[--><!--[--><!--]--><!--]--></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/bt-migration/overview.html" aria-label="📋 Обзор"><!--[--><!--[--><!--]--><!--]-->📋 Обзор<!--[--><!--[--><!--]--><!--]--></a></div><div class="vp-navbar-item"><div class="vp-navbar-dropdown-wrapper"><button class="vp-navbar-dropdown-title" type="button" aria-label="📚 Фазы"><span class="title">📚 Фазы</span><span class="arrow down"></span></button><button class="vp-navbar-dropdown-title-mobile" type="button" aria-label="📚 Фазы"><span class="title">📚 Фазы</span><span class="right arrow"></span></button><ul class="vp-navbar-dropdown" style="display:none;"><!--[--><li class="vp-navbar-dropdown-item"><a class="route-link auto-link" href="/bt-migration/phases/phase-0.html" aria-label="Фаза 0: Подготовка"><!--[--><!--[--><!--]--><!--]-->Фаза 0: Подготовка<!--[--><!--[--><!--]--><!--]--></a></li><li class="vp-navbar-dropdown-item"><a class="route-link route-link-active auto-link" href="/bt-migration/phases/phase-1.html" aria-label="Фаза 1: Настройка"><!--[--><!--[--><!--]--><!--]-->Фаза 1: Настройка<!--[--><!--[--><!--]--><!--]--></a></li><li class="vp-navbar-dropdown-item"><a class="route-link auto-link" href="/bt-migration/phases/phase-2.html" aria-label="Фаза 2: UI Kit"><!--[--><!--[--><!--]--><!--]-->Фаза 2: UI Kit<!--[--><!--[--><!--]--><!--]--></a></li><li class="vp-navbar-dropdown-item"><a class="route-link auto-link" href="/bt-migration/phases/phase-0.html" aria-label="Все фазы..."><!--[--><!--[--><!--]--><!--]-->Все фазы...<!--[--><!--[--><!--]--><!--]--></a></li><!--]--></ul></div></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/bt-migration/tech-stack.html" aria-label="⚙️ Технический стек"><!--[--><!--[--><!--]--><!--]-->⚙️ Технический стек<!--[--><!--[--><!--]--><!--]--></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/bt-migration/roadmap.html" aria-label="🗺️ Roadmap"><!--[--><!--[--><!--]--><!--]-->🗺️ Roadmap<!--[--><!--[--><!--]--><!--]--></a></div><div class="vp-navbar-item"><div class="vp-navbar-dropdown-wrapper"><button class="vp-navbar-dropdown-title" type="button" aria-label="🔗 Ссылки"><span class="title">🔗 Ссылки</span><span class="arrow down"></span></button><button class="vp-navbar-dropdown-title-mobile" type="button" aria-label="🔗 Ссылки"><span class="title">🔗 Ссылки</span><span class="right arrow"></span></button><ul class="vp-navbar-dropdown" style="display:none;"><!--[--><li class="vp-navbar-dropdown-item"><a class="auto-link external-link" href="https://github.com/bit-team/exchange-unified" aria-label="GitHub" rel="noopener noreferrer" target="_blank"><!--[--><!--[--><!--]--><!--]-->GitHub<!--[--><!--[--><!--]--><!--]--></a></li><li class="vp-navbar-dropdown-item"><a class="route-link auto-link" href="/bt-migration/#" aria-label="Figma"><!--[--><!--[--><!--]--><!--]-->Figma<!--[--><!--[--><!--]--><!--]--></a></li><!--]--></ul></div></div><!--]--></nav><!--[--><!--]--><ul class="vp-sidebar-items"><!--[--><li><p tabindex="0" class="vp-sidebar-item vp-sidebar-heading">🚀 Введение <!----></p><ul class="vp-sidebar-children" style=""><!--[--><li><a class="route-link auto-link vp-sidebar-item" href="/bt-migration/overview.html" aria-label="📋 Обзор проекта"><!--[--><!--[--><!--]--><!--]-->📋 Обзор проекта<!--[--><!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/bt-migration/tech-stack.html" aria-label="⚙️ Технический стек"><!--[--><!--[--><!--]--><!--]-->⚙️ Технический стек<!--[--><!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/bt-migration/roadmap.html" aria-label="🗺️ Roadmap"><!--[--><!--[--><!--]--><!--]-->🗺️ Roadmap<!--[--><!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/bt-migration/next-steps.html" aria-label="📝 Следующие шаги"><!--[--><!--[--><!--]--><!--]-->📝 Следующие шаги<!--[--><!--[--><!--]--><!--]--></a><!----></li><!--]--></ul></li><li><p tabindex="0" class="vp-sidebar-item vp-sidebar-heading active collapsible">📚 Фазы миграции <span class="down arrow"></span></p><ul class="vp-sidebar-children" style=""><!--[--><li><a class="route-link auto-link vp-sidebar-item" href="/bt-migration/phases/phase-0.html" aria-label="Фаза 0: Подготовка"><!--[--><!--[--><!--]--><!--]-->Фаза 0: Подготовка<!--[--><!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link route-link-active auto-link vp-sidebar-item active" href="/bt-migration/phases/phase-1.html" aria-label="Фаза 1: Настройка проекта"><!--[--><!--[--><!--]--><!--]-->Фаза 1: Настройка проекта<!--[--><!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/bt-migration/phases/phase-2.html" aria-label="Фаза 2: UI Kit"><!--[--><!--[--><!--]--><!--]-->Фаза 2: UI Kit<!--[--><!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/bt-migration/phases/phase-3.html" aria-label="Фаза 3: Auth модуль"><!--[--><!--[--><!--]--><!--]-->Фаза 3: Auth модуль<!--[--><!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/bt-migration/phases/phase-4.html" aria-label="Фаза 4: SPOT модуль"><!--[--><!--[--><!--]--><!--]-->Фаза 4: SPOT модуль<!--[--><!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/bt-migration/phases/phase-5.html" aria-label="Фаза 5: P2P модуль"><!--[--><!--[--><!--]--><!--]-->Фаза 5: P2P модуль<!--[--><!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/bt-migration/phases/phase-6.html" aria-label="Фаза 6: Интеграция"><!--[--><!--[--><!--]--><!--]-->Фаза 6: Интеграция<!--[--><!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/bt-migration/phases/phase-7.html" aria-label="Фаза 7: Тестирование"><!--[--><!--[--><!--]--><!--]-->Фаза 7: Тестирование<!--[--><!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/bt-migration/phases/phase-8.html" aria-label="Фаза 8: Оптимизация"><!--[--><!--[--><!--]--><!--]-->Фаза 8: Оптимизация<!--[--><!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/bt-migration/phases/phase-9.html" aria-label="Фаза 9: Деплой"><!--[--><!--[--><!--]--><!--]-->Фаза 9: Деплой<!--[--><!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/bt-migration/phases/phase-10.html" aria-label="Фаза 10: Мониторинг"><!--[--><!--[--><!--]--><!--]-->Фаза 10: Мониторинг<!--[--><!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/bt-migration/phases/phase-11.html" aria-label="Фаза 11: CI/CD"><!--[--><!--[--><!--]--><!--]-->Фаза 11: CI/CD<!--[--><!--[--><!--]--><!--]--></a><!----></li><li><a class="route-link auto-link vp-sidebar-item" href="/bt-migration/phases/phase-12.html" aria-label="Фаза 12: Документация"><!--[--><!--[--><!--]--><!--]-->Фаза 12: Документация<!--[--><!--[--><!--]--><!--]--></a><!----></li><!--]--></ul></li><!--]--></ul><!--[--><!--]--></aside><!--]--><!--[--><main class="vp-page"><!--[--><!--]--><div vp-content><!--[--><!--]--><div><h1 id="фаза-1-инициализация-нового-проекта" tabindex="-1"><a class="header-anchor" href="#фаза-1-инициализация-нового-проекта"><span>Фаза 1: Инициализация нового проекта</span></a></h1><p><strong>Длительность:</strong> 1 неделя</p><h2 id="цели-фазы" tabindex="-1"><a class="header-anchor" href="#цели-фазы"><span>Цели фазы</span></a></h2><p>Создать новый проект с правильной структурой, настроить базовые инструменты и dependencies.</p><h2 id="_1-1-bootstrap-проекта" tabindex="-1"><a class="header-anchor" href="#_1-1-bootstrap-проекта"><span>1.1 Bootstrap проекта</span></a></h2><h3 id="создание-проекта" tabindex="-1"><a class="header-anchor" href="#создание-проекта"><span>Создание проекта</span></a></h3><p><strong>Инициализация Vite + Vue 3:</strong></p><h3 id="git-инициализация" tabindex="-1"><a class="header-anchor" href="#git-инициализация"><span>Git инициализация</span></a></h3><h3 id="создание-веток" tabindex="-1"><a class="header-anchor" href="#создание-веток"><span>Создание веток</span></a></h3><p><strong>Branch strategy:</strong></p><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre><code><span class="line">main (production)</span>
+<span class="line">  ├── stage (staging)</span>
+<span class="line">  │   └── dev (development)</span>
+<span class="line">  │       └── feature/* (feature branches)</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_1-2-установка-core-зависимостеи" tabindex="-1"><a class="header-anchor" href="#_1-2-установка-core-зависимостеи"><span>1.2 Установка core зависимостей</span></a></h2><h2 id="_1-3-структура-проекта" tabindex="-1"><a class="header-anchor" href="#_1-3-структура-проекта"><span>1.3 Структура проекта</span></a></h2><h3 id="создание-структуры-директории" tabindex="-1"><a class="header-anchor" href="#создание-структуры-директории"><span>Создание структуры директорий</span></a></h3><h3 id="детальная-структура" tabindex="-1"><a class="header-anchor" href="#детальная-структура"><span>Детальная структура</span></a></h3><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre><code><span class="line">exchange-unified/</span>
+<span class="line">├── src/</span>
+<span class="line">│   ├── app/                      # App configuration</span>
+<span class="line">│   │   ├── App.vue               # Root component</span>
+<span class="line">│   │   ├── main.js               # Entry point</span>
+<span class="line">│   │   └── router.js             # Router config</span>
+<span class="line">│   │</span>
+<span class="line">│   ├── modules/                  # Модульная архитектура</span>
+<span class="line">│   │   ├── auth/                # Модуль авторизации</span>
+<span class="line">│   │   │   ├── pages/</span>
+<span class="line">│   │   │   ├── components/</span>
+<span class="line">│   │   │   ├── composables/</span>
+<span class="line">│   │   │   ├── stores/</span>
+<span class="line">│   │   │   └── routes.js</span>
+<span class="line">│   │   ├── spot/                # SPOT trading</span>
+<span class="line">│   │   │   ├── pages/</span>
+<span class="line">│   │   │   ├── components/</span>
+<span class="line">│   │   │   ├── composables/</span>
+<span class="line">│   │   │   ├── stores/</span>
+<span class="line">│   │   │   └── routes.js</span>
+<span class="line">│   │   ├── p2p/                 # P2P trading</span>
+<span class="line">│   │   │   └── ...</span>
+<span class="line">│   │   ├── wallet/              # Кошельки</span>
+<span class="line">│   │   │   └── ...</span>
+<span class="line">│   │   ├── profile/             # Профиль пользователя</span>
+<span class="line">│   │   │   └── ...</span>
+<span class="line">│   │   ├── home/                # Публичные страницы</span>
+<span class="line">│   │   │   └── ...</span>
+<span class="line">│   │   └── shared/              # Общие модули</span>
+<span class="line">│   │       └── ...</span>
+<span class="line">│   │</span>
+<span class="line">│   ├── shared/                  # Shared resources</span>
+<span class="line">│   │   ├── ui/                  # UI Kit компоненты</span>
+<span class="line">│   │   │   ├── base/           # Atoms - базовые компоненты</span>
+<span class="line">│   │   │   │   ├── UiButton/</span>
+<span class="line">│   │   │   │   │   ├── UiButton.vue</span>
+<span class="line">│   │   │   │   │   ├── UiButton.spec.js</span>
+<span class="line">│   │   │   │   │   └── index.js</span>
+<span class="line">│   │   │   │   ├── UiInput/</span>
+<span class="line">│   │   │   │   ├── UiIcon/</span>
+<span class="line">│   │   │   │   └── ...</span>
+<span class="line">│   │   │   ├── form/           # Molecules - формы</span>
+<span class="line">│   │   │   │   ├── UiTextField/</span>
+<span class="line">│   │   │   │   ├── UiSelect/</span>
+<span class="line">│   │   │   │   └── ...</span>
+<span class="line">│   │   │   ├── data/           # Molecules - таблицы, списки</span>
+<span class="line">│   │   │   │   ├── UiTable/</span>
+<span class="line">│   │   │   │   ├── UiCard/</span>
+<span class="line">│   │   │   │   └── ...</span>
+<span class="line">│   │   │   ├── feedback/       # Molecules - модалки, тосты</span>
+<span class="line">│   │   │   │   ├── UiModal/</span>
+<span class="line">│   │   │   │   ├── UiToast/</span>
+<span class="line">│   │   │   │   └── ...</span>
+<span class="line">│   │   │   └── trading/        # Organisms - специфичные для биржи</span>
+<span class="line">│   │   │       ├── OrderBook/</span>
+<span class="line">│   │   │       ├── TradingChart/</span>
+<span class="line">│   │   │       └── ...</span>
+<span class="line">│   │   │</span>
+<span class="line">│   │   ├── components/          # Общие компоненты</span>
+<span class="line">│   │   │   ├── TheHeader.vue</span>
+<span class="line">│   │   │   ├── TheSidebar.vue</span>
+<span class="line">│   │   │   ├── TheFooter.vue</span>
+<span class="line">│   │   │   └── ...</span>
+<span class="line">│   │   │</span>
+<span class="line">│   │   ├── composables/         # Vue Composables</span>
+<span class="line">│   │   │   ├── useAuth.js</span>
+<span class="line">│   │   │   ├── useTheme.js</span>
+<span class="line">│   │   │   ├── useBreakpoint.js</span>
+<span class="line">│   │   │   └── ...</span>
+<span class="line">│   │   │</span>
+<span class="line">│   │   ├── utils/               # Утилиты</span>
+<span class="line">│   │   │   ├── formatters.js   # Форматирование чисел, дат</span>
+<span class="line">│   │   │   ├── validators.js   # Валидация</span>
+<span class="line">│   │   │   ├── helpers.js      # Общие хелперы</span>
+<span class="line">│   │   │   └── ...</span>
+<span class="line">│   │   │</span>
+<span class="line">│   │   ├── services/            # API сервисы</span>
+<span class="line">│   │   │   ├── api.js          # Base API client</span>
+<span class="line">│   │   │   ├── auth.service.js</span>
+<span class="line">│   │   │   ├── trading.service.js</span>
+<span class="line">│   │   │   ├── wallet.service.js</span>
+<span class="line">│   │   │   └── ...</span>
+<span class="line">│   │   │</span>
+<span class="line">│   │   ├── stores/              # Pinia stores</span>
+<span class="line">│   │   │   ├── auth.js</span>
+<span class="line">│   │   │   ├── ui.js</span>
+<span class="line">│   │   │   ├── wallet.js</span>
+<span class="line">│   │   │   └── ...</span>
+<span class="line">│   │   │</span>
+<span class="line">│   │   ├── types/               # TypeScript types</span>
+<span class="line">│   │   │   ├── api.types.ts</span>
+<span class="line">│   │   │   ├── user.types.ts</span>
+<span class="line">│   │   │   └── ...</span>
+<span class="line">│   │   │</span>
+<span class="line">│   │   ├── constants/           # Константы</span>
+<span class="line">│   │   │   ├── api.constants.js</span>
+<span class="line">│   │   │   ├── app.constants.js</span>
+<span class="line">│   │   │   └── ...</span>
+<span class="line">│   │   │</span>
+<span class="line">│   │   └── layouts/             # Layout компоненты</span>
+<span class="line">│   │       ├── DefaultLayout.vue</span>
+<span class="line">│   │       ├── AuthLayout.vue</span>
+<span class="line">│   │       ├── DashboardLayout.vue</span>
+<span class="line">│   │       └── ...</span>
+<span class="line">│   │</span>
+<span class="line">│   ├── assets/                  # Статические ресурсы</span>
+<span class="line">│   │   ├── styles/</span>
+<span class="line">│   │   │   ├── variables.scss  # SCSS переменные</span>
+<span class="line">│   │   │   ├── mixins.scss     # SCSS миксины</span>
+<span class="line">│   │   │   └── global.scss     # Глобальные стили</span>
+<span class="line">│   │   ├── images/</span>
+<span class="line">│   │   │   ├── logo.svg</span>
+<span class="line">│   │   │   └── ...</span>
+<span class="line">│   │   ├── fonts/</span>
+<span class="line">│   │   │   └── ...</span>
+<span class="line">│   │   └── locales/</span>
+<span class="line">│   │       ├── en.json</span>
+<span class="line">│   │       └── ru.json</span>
+<span class="line">│   │</span>
+<span class="line">│   └── plugins/                 # Vue plugins</span>
+<span class="line">│       ├── vuetify.js          # Vuetify config</span>
+<span class="line">│       ├── i18n.js             # i18n config</span>
+<span class="line">│       ├── axios.js            # Axios interceptors</span>
+<span class="line">│       └── websocket.js        # WebSocket plugin</span>
+<span class="line">│</span>
+<span class="line">├── public/                      # Public assets</span>
+<span class="line">│   ├── favicon.ico</span>
+<span class="line">│   └── robots.txt</span>
+<span class="line">│</span>
+<span class="line">├── tests/                       # Тесты</span>
+<span class="line">│   ├── unit/</span>
+<span class="line">│   │   └── ...</span>
+<span class="line">│   └── e2e/</span>
+<span class="line">│       └── ...</span>
+<span class="line">│</span>
+<span class="line">├── .env.development             # Dev environment</span>
+<span class="line">├── .env.staging                 # Staging environment</span>
+<span class="line">├── .env.production              # Production environment</span>
+<span class="line">├── .eslintrc.js                 # ESLint config</span>
+<span class="line">├── .prettierrc.js               # Prettier config</span>
+<span class="line">├── .gitignore</span>
+<span class="line">├── vite.config.js               # Vite config</span>
+<span class="line">├── vitest.config.js             # Vitest config (тесты)</span>
+<span class="line">├── playwright.config.js         # Playwright config (E2E)</span>
+<span class="line">├── package.json</span>
+<span class="line">└── README.md</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="фаиловая-структура-модуля-пример" tabindex="-1"><a class="header-anchor" href="#фаиловая-структура-модуля-пример"><span>Файловая структура модуля (пример)</span></a></h3><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre><code><span class="line">modules/auth/</span>
+<span class="line">├── pages/</span>
+<span class="line">│   ├── LoginPage.vue</span>
+<span class="line">│   ├── RegisterPage.vue</span>
+<span class="line">│   ├── ForgotPasswordPage.vue</span>
+<span class="line">│   └── ResetPasswordPage.vue</span>
+<span class="line">├── components/</span>
+<span class="line">│   ├── LoginForm.vue</span>
+<span class="line">│   ├── RegisterForm.vue</span>
+<span class="line">│   └── OAuthButtons.vue</span>
+<span class="line">├── composables/</span>
+<span class="line">│   ├── useAuth.js</span>
+<span class="line">│   └── use2FA.js</span>
+<span class="line">├── stores/</span>
+<span class="line">│   └── auth.store.js</span>
+<span class="line">└── routes.js</span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_1-4-конфигурация-инструментов" tabindex="-1"><a class="header-anchor" href="#_1-4-конфигурация-инструментов"><span>1.4 Конфигурация инструментов</span></a></h2><h2 id="_1-5-настроика-firebase-временное-hosting-решение" tabindex="-1"><a class="header-anchor" href="#_1-5-настроика-firebase-временное-hosting-решение"><span>1.5 Настройка Firebase (временное hosting решение)</span></a></h2><h2 id="чеклист-завершения-фазы-1" tabindex="-1"><a class="header-anchor" href="#чеклист-завершения-фазы-1"><span>Чеклист завершения фазы 1</span></a></h2><ul><li>[ ] Проект создан и инициализирован</li><li>[ ] Git репозиторий настроен</li><li>[ ] Все dependencies установлены</li><li>[ ] Структура папок создана</li><li>[ ] Vite конфигурация настроена</li><li>[ ] ESLint и Prettier настроены</li><li>[ ] Environment файлы созданы</li><li>[ ] Firebase Hosting настроен</li><li>[ ] README.md написан</li><li>[ ] Проект запускается локально</li></ul><h2 id="следующии-шаг" tabindex="-1"><a class="header-anchor" href="#следующии-шаг"><span>Следующий шаг</span></a></h2><p>После завершения фазы 1 переходим к:</p><p>→ <a href="/phases/phase-2" target="_blank" rel="noopener noreferrer">Фаза 2: Дизайн-система и UI Kit</a></p></div><!--[--><!--]--></div><footer class="vp-page-meta"><!----><div class="vp-meta-item git-info"><div class="vp-meta-item last-updated"><span class="meta-item-label">Последнее обновление: </span><time class="meta-item-info" datetime="2025-10-15T22:52:45.000Z" data-allow-mismatch>16.10.2025, 01:52</time></div><div class="vp-meta-item contributors"><span class="meta-item-label">Авторы: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: 54032374+amatevosyan-github@users.noreply.github.com">amatevosyan-github</span><!----><!--]--><!--]--></span></div></div></footer><nav class="vp-page-nav" aria-label="page navigation"><a class="route-link auto-link prev" href="/bt-migration/phases/phase-0.html" aria-label="Фаза 0: Подготовка"><!--[--><div class="hint"><span class="arrow left"></span> true</div><div class="link"><span class="external-link">Фаза 0: Подготовка</span></div><!--]--></a><a class="route-link auto-link next" href="/bt-migration/phases/phase-2.html" aria-label="Фаза 2: UI Kit"><!--[--><div class="hint">true <span class="arrow right"></span></div><div class="link"><span class="external-link">Фаза 2: UI Kit</span></div><!--]--></a></nav><!--[--><!--]--></main><!--]--></div><!--[--><!----><!--]--><!--]--></div>
+    <script type="module" src="/bt-migration/assets/app-p3I3XXQx.js" defer></script>
+  </body>
+</html>
